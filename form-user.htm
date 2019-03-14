@@ -1,0 +1,58 @@
+<form name="frmUsuario">
+		<div class="container">
+			<div class="form-group">
+				<div class="form-row">
+					<div class="col-12">
+						<label>Matricula</label>
+						<input type="number" name="matriculaval" class="form-control" ng-model="user.matricula" required>
+						<span ng-show="frmUsuario.matriculaval.$dirty && 
+						frmUsuario.matriculaval.$error.required" class="alert alert-danger">Campo Requerido</span>
+					</div>
+					<div class="col-12">
+						<label>Nombre</label>
+						<input type="text" name="nombreval" class="form-control" ng-model="user.edad" required> 
+						<span ng-show="frmUsuario.nombreval.$dirty && 
+						frmUsuario.nombreval.$error.required" class="alert alert-danger">Campo Requerido</span>
+					</div>
+					<div class="col-12">
+						<label>Direccion</label>
+						<input type="text" name="direccionval" class="form-control" ng-model="user.direccion" required>
+						<span ng-show="frmUsuario.direccionval.$dirty && 
+						frmUsuario.direccionval.$error.required" class="alert alert-danger">Campo Requerido</span>
+					</div>
+					<div class="col-6">
+						<label>Correo</label>
+						<input type="text" name="correoval" class="form-control" ng-model="user.correo" required>
+						<span ng-show="frmUsuario.correoval.$dirty && 
+						frmUsuario.correoval.$error.required" class="alert alert-danger">Campo Requerido</span>
+					</div>
+					<div class="col-6">
+						<label>RFC</label>
+						<input type="text" name="rfcval" class="form-control" ng-model="user.rfc" required>
+						<span ng-show="frmUsuario.rfcval.$dirty && 
+						frmUsuario.rfcval.$error.required" class="alert alert-danger">Campo Requerido</span>
+					</div>
+					<div class="col-6">
+						<label>Telefono</label>
+						<input type="number" name="telefonoval" class="form-control" ng-model="user.telefono" required>
+						<span ng-show="frmUsuario.telefonoval.$dirty && 
+						frmUsuario.telefonoval.$error.required" class="alert alert-danger">Campo Requerido</span>
+					</div>
+					<div class="col-6">
+						<label>Celular</label>
+						<input type="number" name="celularval" class="form-control" ng-model="user.celular" required>
+						<span ng-show="frmUsuario.celularval.$dirty && 
+						frmUsuario.celularval.$error.required" class="alert alert-danger">Campo Requerido</span>
+					</div>
+					<br>
+					<br>
+					<br>
+					<br>
+					<div class="col-md-3 offset-md-10">
+						<button class="btn btn-outline-primary" type="button" ng-click="show= !show" name="btnbuscar">BUSCAR</button>
+						<button class="btn btn-outline-primary" type="button" ng-click="agregar();" ng-disabled="!frmUsuario.$valid">AGREGAR</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</form>
